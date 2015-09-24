@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CMSC 100 HTML</title>
+		<meta charset = "utf-8"/>
+	</head>
+	<body>
+		<form method = "POST" action = "http://localhost:5000/students"> <!-- localhost is where you'll send request, method can be GET-->
+			<input type="text" name="name" placeholder="Name" required=""/> <!--default input type is text--> <br/>
+			<input type="text" name="studno" placeholder="Student Number" pattern="^\d{4}-\d{5}$" title="20XX-XXXXX" required="" /> <br/>
+			<!--<input type="email"/> <br/>
+			<input type="url"/> <br/>
+			<input type="color"/> <br/>
+			<input type="date"/> <br/>
+			<input type="range"/> <br/>
+			<input type="number"/> <br/>
+			<input type="time"/> <br/> -->
+			<input type="submit" value="Create"/>
+		</form>
+	</body>
+</html>

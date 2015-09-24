@@ -4,7 +4,7 @@ var app = express();
 app.use(require('body-parser')()); //read pay load
 app.use(require('method-override')()); //allows methods to be override
 app.use(require(__dirname+'/config/router')(express.Router())); 
-
+app.use(express.static(__dirname+'/public'));
 /*
 app.get('/',function(req,res){
 	res.send('Hello World!');

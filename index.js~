@@ -14,11 +14,11 @@ app.route('/students')
 	.get(function(req,res){
 		res.send('Get a student');
 })
-.post(function(req,res){
-  res.send('Add a student');
+	.post(function(req,res){
+		res.send('Add a student');
 })
-.put(function(req,res){
-  res.send('Update a student');
+	.put(function(req,res){
+		res.send('Update a student');
 });
 */
 
